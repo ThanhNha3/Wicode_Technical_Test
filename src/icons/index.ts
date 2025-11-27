@@ -15,6 +15,7 @@ import { XMark } from "./XMark";
 import {ChevronDown} from "./ChevronDown";
 import {Sparkles} from "./Sparkles";
 import {Plus} from "./Plus";
+import {Exclamation} from "./Exclamation";
 export {
   ArrowLeft,
   PencilSquare,
@@ -32,5 +33,6 @@ export {
   XMark,
   ChevronDown,
   Sparkles,
-  Plus
+  Plus,
+  Exclamation
 };

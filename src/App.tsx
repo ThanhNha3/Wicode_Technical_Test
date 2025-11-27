@@ -5,6 +5,7 @@ import EditableTable from "./components/EditableTable";
 import Header from "./components/Header";
 import userService from "./services/User";
 import Loading from "./components/Loading";
+import SystemError from "./components/SystemError";
 
 type User = {
   id?: number | string;
@@ -17,7 +18,7 @@ type User = {
 };
 
 function App() {
-  const { data, isLoading } = useQuery<User[], Error>({
+  const { data, isLoading, isError } = useQuery<User[], Error>({
     queryKey: ["users"],
     queryFn: () => userService.getUsers(),
     select: (data) => data,
@@ -37,6 +38,8 @@ function App() {
   }, [data]);
 
   if (isLoading) return <Loading fullscreen />;
+
+  if (true) return <SystemError />;
 
   return (
     <div>
