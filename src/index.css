@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #000;
+  --color-icon-hover: #b6b6b6;
+  --color-divider: #e0e0e0;
+  --table-border: #d0d0d0;
+  --table-header-bg: #f7f7f7;
+  --table-header-text: #111827;
+  --table-bg: #ffffff;
+  --table-hover-bg: #F2F2F2;
+  --table-text-title: #757575;
+}
+
+/* global.css hoặc trong module css */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
