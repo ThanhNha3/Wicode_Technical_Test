@@ -39,7 +39,7 @@ function App() {
 
   if (isLoading) return <Loading fullscreen />;
 
-  if (true) return <SystemError />;
+  if (isError) return <SystemError />;
 
   return (
     <div>
